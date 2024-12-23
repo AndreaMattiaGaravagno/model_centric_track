@@ -1,0 +1,20 @@
+#create a new environment
+python -m venv /path/to/new/virtual/environment
+
+#activate the environment
+source /path/to/new/virtual/environment/bin/activate
+
+#install requirements
+python -m pip install -r requirements.txt
+
+#carefully read "model_centric_track.py"
+
+#in "model_centric_track.py" modify the value of the variable "data_dir",
+#writing the path to the location in which you would like to save the dataset
+
+#execute training script
+python model_centric_track.py
+
+#the first execution will require hours, since it has to download the entire dataset (239.25 GiB)
+#it will train a sample architecture on the dataset to get you started
+#then you can modify the script as you like, and propose your own model architecture!
